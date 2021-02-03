@@ -4,10 +4,9 @@
   "description": "Discord.js bot",
   "main": "src/index.js",
   "scripts": {
-    "dev": "node src/index.js",
     "dev:watch": "nodemon src/index.js",
     "start": "node src/index.js",
-    "fix": "node fix.js"
+
   },
   "repository": {
     "type": "git",
