@@ -12,7 +12,6 @@ Kontakt: titondesign.kontakt@gmail.com
 Bubble Bot Engine® License🔰
 --------------------------------------------------------------------------------------
 LICENCJA MIT - WYMAGANA WZMIANKA AUTORA
-----------------------------------------------------------------------------------------
 
 Licencja szczegółowa tej usługi zawarta jest w pliku LICENSE
 
