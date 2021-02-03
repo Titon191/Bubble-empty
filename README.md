@@ -1,36 +1,20 @@
-# Bubble
+# Bubble Engine
 
-Bot stworzony w discord.js przez Titona. Zawiera
-wiele przydatnych komend administracyjnych oraz 4fun. 
-Jest on w fazie testów, ale już przebywa na kilku dużych
-serwerach.
-Aby dowiedzieć się więcej, należy napisać wiadomość do twórców
-bota:
+Silnik bota Bubble, na którym możesz zbudować swojego własnego bota
+w discord.js.
 
-bubblebot@gmail.com
+Kontakt: titondesign.kontakt@gmail.com
 
 [![](https://bubble.tk/bubble.png)](https://bubble.tk)
 
 
 
-Bubble Bot® License🔰
+Bubble Bot Engine® License🔰
 --------------------------------------------------------------------------------------
-1. Używając zasobów aplikacji Bubble (software) akceptuje (on > użytkownik) regulamin
-aplikacji Bubble oraz warunki korzystania z usługi Bubble.
-Regulamin może zostać zmieniony w dowolnej chwili, jednak użytkownik musi
-zostać o tym poinformowany oraz wyrazić ponownie zgodę i zaakceptować go.
-
-2. Użytkownik nie posiada zgody na publikację aplikacji Bubble oraz na udostępnianie
-jej zasobów, chyba że zezwolił na to twórca aplikacji (Titon).
-
-3. Użytkownik jest zobowiązany do przestrzegania regulaminu który akceptuje otwierając
-pliki tej aplikacji, a nieznajomość regulaminu nie zwalnia z jego przestrzegania.
-
-4. Regulamin apliikacji dostępny jest na stronie internetowej aplikacji.
-Link do strony mogą podać twórcy aplikacji Bubble.
+LICENCJA MIT - WYMAGANA WZMIANKA AUTORA
 ----------------------------------------------------------------------------------------
 
-Licencja usługi zawarta jest w pliku LICENSE
+Licencja szczegółowa tej usługi zawarta jest w pliku LICENSE
 
 
 Wspomóż nas!
