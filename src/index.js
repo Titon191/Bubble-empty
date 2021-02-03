@@ -12,7 +12,6 @@ client.config = require("./config/config.js")
 // Command handler, eventHandler, apiHandler (BETA)
 const commandHandler = require("./handlers/command.handler")
 const eventHandler = require("./handlers/event.handler")
-const apiHandler = require("./handlers/api.handler.js")
 
 
 
@@ -21,8 +20,7 @@ const apiHandler = require("./handlers/api.handler.js")
 commandHandler(client)
 //Wczytuje eventHandler
 eventHandler(client)
-//Wczytuje apiHandler
-apiHandler(client)
+
 
 // Loguje się na token podany w pliku .env
 client.login(process.env.token)
