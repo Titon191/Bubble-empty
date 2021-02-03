@@ -37,7 +37,6 @@ module.exports = {
     prefix:"-",
     programers: ["0123456789"], // tu zamiast "0123456789" wklej swoje ID i/lub ID innych osób które mają mieć pełną kontrolę nad botem!
     testers: ["0123456789"], // tutaj MOŻESZ (nie musisz) wkleić id "testerów" Twojego bota. Ich uprawnienia będa ograniczone
-    supporters: [], // tutaj MOŻESZ (nie musisz) wkleić id "wspierających" Twojego bota. Ich uprawnienia będa ograniczone
 }
 
 ```
