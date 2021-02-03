@@ -69,6 +69,7 @@ lub "dev:watch"
 W przypadku uruchamiania bota przez konsolę komend, wpisz w głównej lokalizacji bota
 "node src/index.js"
 
+Pełną dokumentacją znajdziesz na https://github.com/Titon191/Bubble-engine/wiki
 
 Bubble Bot Engine® License🔰
 --------------------------------------------------------------------------------------
