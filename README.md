@@ -38,4 +38,4 @@ Wspomóż nas!
 Aby bot Bubble lepiej i szybciej się rozwijał, wpłać dotację na konto podane
 poniżej:
 
-0000-0000-0000-000
+https://paypal.me/natanlipinski
