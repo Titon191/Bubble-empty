@@ -20,6 +20,9 @@ token=WKLEJ_TU_TOKEN_TWOJEGO_BOTA
 mongoUrl=JEŚLI_KORZYSTASZ_Z_BAZY_DANYCH_MONGODB_WKLEJ_TU_LINK
 ```
 
+Jeśli nie korzystasz z bazy danych MongoDB, usuń ten parametr i zostaw
+w pliku tylko "token=TWOJ_TOKEN"
+
 ### Krok 2.
 W folderze src/config przejdź do pliku config.js
 Uzupełnij go w ten sposób:
