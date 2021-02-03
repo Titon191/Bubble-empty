@@ -27,10 +27,7 @@ client.login(process.env.token)
 
 // Po uruchomieniu
 client.on("ready", () => {
-    client.guilds.cache.forEach(async guild => {
-      const data = await client.db.get(guild.id) || null
-      if (data === null) await client.db.set(guild.id, {})
-    })
+   
   })
 
 process.on('uncaughtException', err =>  console.log('Caught exception:' + err));
