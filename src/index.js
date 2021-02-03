@@ -7,6 +7,7 @@ const intents = new Intents([
 
 global.client = new Client({ ws: { intents } });
 client.config = require("./config/config.js")
+global.f = require("./functions.js")
 
 
 // Command handler, eventHandler
