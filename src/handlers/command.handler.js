@@ -155,28 +155,7 @@ module.exports = (client) => {
       // Sprawdza, czy komenda istnieje
       if (!cmd) return
 
-       if(cmd.devlvl) {
-        const { text, userprogramperms } = f.userProgramPerms(3, msg.author.id)
-      
-      if(userprogramperms < cmd.devlvl) {
-        emb2 = new MessageEmbed()
-        .setTitle(`Nie posiadasz uprawnień`)
-        .setDescription(text)
-        .setColor(f.colorToHex('lightblue'))
-        .setFooter(msg.author.tag, msg.author.displayAvatarURL())
-         return msg.channel.send(emb2)
-       }
-       
-  
-      }
-      const { text, userprogramperms } = f.userProgramPerms(2, msg.author.id)
-      if(cmd.disabled && userprogramperms < 2) {
-        const emb = new MessageEmbed()
-        .setTitle("Nie posiadasz uprawnień")
-        .setColor(f.colorToHex('lightblue'))
-        .setDescription(`${f.customEmoji("bad")}Ta komenda jest wyłączona. Nie masz wystarczającego poziomu uprawnień develpoerów bota aby ją uruchomić.\nWymagany: \`${cmd.devlvl} (${mintext})\`\nTwój: \`${userprogramperms} (${userprogrampermstext})\``)
-        return msg.channel.send(emb)
-      }
+   
         
         if (cmd.guildOnly && !guild) {
             return msg.channel.send(":no: Ta komenda nie jest możliwa do użycia w wiadomości prywatnej..")
@@ -193,8 +172,8 @@ module.exports = (client) => {
           if (!guild.me.permissionsIn(channel).has(cmd.botPermissions)) {
             const noperm = new MessageEmbed()
             .setTitle('Bot nie ma uprawnień')
-            .setColor(f.colorToHex('lightblue'))
-            .setDescription(`${f.customEmoji("bad")} Bot nie posiada uprawnień do wykonania tej komendy\nWymagane uprawnienia: **${f.textPermissions(cmd.userPermissions).toUpperCase()}**`)
+            .setColor('RED')
+            .setDescription(`:no: Bot nie posiada uprawnień do wykonania tej komendy\nWymagane uprawnienia: **${f.textPermissions(cmd.userPermissions).toUpperCase()}**`)
             .setFooter(`${msg.author.tag}`, msg.author.displayAvatarURL())
             return channel.send(noperm)
           }
@@ -205,9 +184,9 @@ module.exports = (client) => {
           if(!msg.member.permissionsIn(channel).has(cmd.userPermissions) && !programers.includes(msg.author.id)) {
             const noperm = new MessageEmbed()
             .setTitle('Nie posiadasz uprawnień')
-            .setColor(f.colorToHex('lightblue'))
+            .setColor('RED')
             .setFooter(`${msg.author.tag}`, msg.author.displayAvatarURL())
-            .setDescription(`${f.customEmoji("bad")} Nie posiadasz wystarczających uprawnień do wykonania tej komendy\nWymagane uprawnienia: **${f.textPermissions(cmd.userPermissions).toUpperCase()}**`)
+            .setDescription(`:no: Nie posiadasz wystarczających uprawnień do wykonania tej komendy\nWymagane uprawnienia: **${f.textPermissions(cmd.userPermissions).toUpperCase()}**`)
             return channel.send(noperm)
           }
         }
@@ -249,7 +228,7 @@ module.exports = (client) => {
             channel.send("Podczas wykonywania tej komendy wystąpił błąd. Raport z tym błędem został wysłany do programistów bota, którzy postarają się go jak najszybciej naprawić. ")
             const link = await haste.post(error)
             const embed = new MessageEmbed()
-            .setColor(f.colorToHex("red"))
+            .setColor()
             .setTitle("Błąd")
             .setDescription(`**Typ błędu:** bład podczas wykonywania komendy. \n**Komenda:** ${cmd.name} \n**Użytkownik:** <@${msg.author.id}> \n**Rodzaj kanału:** ${msg.channel.type === "text" ? "serwer" : "DM"} \n**Błąd:** [zobacz](${link})`)
 
