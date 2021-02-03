@@ -9,7 +9,7 @@ global.client = new Client({ ws: { intents } });
 client.config = require("./config/config.js")
 
 
-// Command handler, eventHandler, apiHandler (BETA)
+// Command handler, eventHandler
 const commandHandler = require("./handlers/command.handler")
 const eventHandler = require("./handlers/event.handler")
 
