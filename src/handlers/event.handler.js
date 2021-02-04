@@ -3,7 +3,6 @@ const f = require(__dirname + "/../functions.js")
 const chalk = require("chalk")
 const { Constants: { Events } } = require("discord.js")
 const { dirname } = require("path")
-const haste = new hastebin()
 const serverEvents = Object.values(Events)
 
 module.exports = (client) => {
