@@ -21,9 +21,7 @@ const { programers } = client.config
 const table = new ascii().setHeading("Komenda","Status", "Uwagi")
 const f = require(__dirname + "/../functions.js")
 const { textPermissions } = f
-const hastebin = require("hastebin.js");
 const { type } = require('os');
-const haste = new hastebin()
 const parse = require("parse-ms")
 const { Database } = require("quickmongo");
 const { Player } = require("discord-music-player");
@@ -226,11 +224,11 @@ module.exports = (client) => {
             console.log(error)
          
             channel.send("Podczas wykonywania tej komendy wystąpił błąd. Raport z tym błędem został wysłany do programistów bota, którzy postarają się go jak najszybciej naprawić. ")
-            const link = await haste.post(error)
+         
             const embed = new MessageEmbed()
             .setColor()
             .setTitle("Błąd")
-            .setDescription(`**Typ błędu:** bład podczas wykonywania komendy. \n**Komenda:** ${cmd.name} \n**Użytkownik:** <@${msg.author.id}> \n**Rodzaj kanału:** ${msg.channel.type === "text" ? "serwer" : "DM"} \n**Błąd:** [zobacz](${link})`)
+            .setDescription(`**Typ błędu:** bład podczas wykonywania komendy. \n**Komenda:** ${cmd.name} \n**Użytkownik:** <@${msg.author.id}> \n**Rodzaj kanału:** ${msg.channel.type === "text" ? "serwer" : "DM"}`)
 
             w.send(embed)
             channel.send("Wystąpił błąd!")
