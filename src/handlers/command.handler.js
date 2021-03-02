@@ -34,6 +34,9 @@ const { Player } = require("discord-music-player");
   // Baza danych - przechowuje dane
 client.db = new Database(process.env.mongoUrl)
 
+// Definiuje wersję silnika Bubble
+client.engine = "Bubble Engine v.1.0.3"
+
   // Komendy - odpowiada za wykonywanie komend
 client.commands = new Collection()
 
