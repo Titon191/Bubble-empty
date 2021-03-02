@@ -196,15 +196,15 @@ module.exports = (client) => {
 
             if (cmd.ussage) {
                if (typeof(cmd.ussage) === "string") {
-                reply = reply + `\nPoprawne użycie: \`${msg.prefix}${cmdName} ${cmd.ussage}\``
+                reply = reply + `\nPoprawne użycie: \`${prefix}${cmdName} ${cmd.ussage}\``
                } else {
-                reply += "\nPoprawne użycie: " + cmd.ussage.map(u => `\`${msg.prefix}${cmdName} ${u}\``).join(" lub ")
+                reply += "\nPoprawne użycie: " + cmd.ussage.map(u => `\`${prefix}${cmdName} ${u}\``).join(" lub ")
                }
                if (cmd.example) {
                    if (typeof(cmd.example) === "string") {
-                   reply += `\nNa przykład: \`${msg.prefix}${cmdName} ${cmd.example}`
+                   reply += `\nNa przykład: \`${prefix}${cmdName} ${cmd.example}`
                    } else {
-                       reply += "\nNa przykład: " + cmd.example.map(e => `\`${msg.prefix}${cmdName} ${e}\``).join(" lub ")
+                       reply += "\nNa przykład: " + cmd.example.map(e => `\`${prefix}${cmdName} ${e}\``).join(" lub ")
                    }
                }
             }
